@@ -4,4 +4,7 @@ mcd a 0 = a
 mcd a b = mcd b (a `mod` b)
 
 main = do
-  print(mcd 15 20)
+  a <- getLine
+  b <- getLine
+  putStrLn "El maximo común divisor de los números es "
+  print(mcd a b)
